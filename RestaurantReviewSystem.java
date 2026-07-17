@@ -2,9 +2,9 @@
  * Restaurant Review System
  *
  * Group Members:
- * ________________________
- * ________________________
- * ________________________
+ * Brandon 
+ * Brendan 
+ * Pranav 
  *
  * CPSC 39
  */
@@ -50,14 +50,20 @@ public class RestaurantReviewSystem
                 String ingredientData = "";
 
                 //---------------------------------------------------
-                // TODO:
-                // Parse the line and assign values to the variables.
+                String[] fields = line.split(",")
+
                 //---------------------------------------------------
 
                 //---------------------------------------------------
                 // TODO:
-                // Search the ArrayList to determine whether this
-                // restaurant already exists.
+                for (Restaurant r : restaurants) {
+                   if (r.getName().equals(restaurantName)) {
+                    restaurant = r;
+                    break;
+                   }
+                }
+
+                 
                 //---------------------------------------------------
 
                 Restaurant restaurant = null;
