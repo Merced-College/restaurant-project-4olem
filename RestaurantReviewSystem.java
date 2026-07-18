@@ -2,9 +2,9 @@
  * Restaurant Review System
  *
  * Group Members:
- * Brandon 
- * Brendan 
- * Pranav 
+* Brandon Diaz-Perez
+* Brendan Hulse
+* Pranav Vadibel
  *
  * CPSC 39
  */
@@ -52,10 +52,21 @@ public class RestaurantReviewSystem
                 //---------------------------------------------------
                 String[] fields = line.split(",")
 
+                String restaurantName = fields[0];
+                String cuisine = fields[1];
+                Double rating = Double.parseDouble(fields[2]);
+                String menuItemName = fields[3];
+                String category = fields[4];
+                Double 
+                Int 
+                String
+
+
+
                 //---------------------------------------------------
 
                 //---------------------------------------------------
-                // TODO:
+                
                 for (Restaurant r : restaurants) {
                    if (r.getName().equals(restaurantName)) {
                     restaurant = r;
@@ -68,15 +79,19 @@ public class RestaurantReviewSystem
 
                 Restaurant restaurant = null;
 
-                //---------------------------------------------------
-                // TODO:
-                // If the restaurant does not exist,
-                // create it and add it to the ArrayList.
-                //---------------------------------------------------
+                
+                
+                if (restaurant == null;) {
+                    restaurant = new Restaurant(restaurantName, cuisine, rating);
+                    restaurants.add(restaurant);
 
-                //---------------------------------------------------
-                // TODO:
-                // Create the MenuItem object.
+                }
+                 
+                //--------------------------------------------------
+
+            
+                menuItem = new MenuItem(menuItemName, category, price calories);
+                
                 //---------------------------------------------------
 
                 MenuItem menuItem = null;

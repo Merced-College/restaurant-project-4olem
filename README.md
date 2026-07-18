@@ -58,21 +58,21 @@ By completing this assignment, you should be able to:
 
 **Name:**
 
----
+Bradnon Diaz-Perez
 
-**Group Number:**
+**Group Number:1
 
----
 
----
+
+
 
 # Assigned Class
 
 Check the class you were responsible for creating.
 
-* [ ] Restaurant
-* [ ] MenuItem
-* [ ] Ingredient
+* [] Restaurant
+* [] MenuItem
+* [] Ingredient
 
 ---
 
