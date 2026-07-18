@@ -57,9 +57,9 @@ public class RestaurantReviewSystem
                 Double rating = Double.parseDouble(fields[2]);
                 String menuItemName = fields[3];
                 String category = fields[4];
-                Double 
-                Int 
-                String
+                Double price = Double.parseDouble(fields[5]); 
+                Int calories = Int.parseInt(fields[6]);
+                String ingredientData = fields[7];
 
 
 
