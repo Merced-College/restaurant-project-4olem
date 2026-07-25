@@ -62,19 +62,11 @@ Bradnon Diaz-Perez
 
 **Group Number:1
 
-
-
-
-
 # Assigned Class
 
 Check the class you were responsible for creating.
 
 * [] Restaurant
-* [] MenuItem
-* [] Ingredient
-
----
 
 # Program Requirements
 
@@ -124,7 +116,9 @@ Examples:
 
 **My Contributions**
 
----
+Created entired assigned class
+Created the intial parsing code to seperate the CSV fields, which was updated a bit by Brendan!
+
 
 ---
 
