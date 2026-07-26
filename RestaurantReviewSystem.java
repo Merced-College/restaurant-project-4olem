@@ -39,8 +39,7 @@ String category = "";
 double price = 0;
 int calories = 0;
 //Brandon
-String[] fields = line.split(","); // split everything between
-commas
+String[] fields = line.split(","); // split everything between commas
 restaurantName = fields[0];
 cuisine = fields[1];
 rating = Double.parseDouble(fields[2]);
@@ -56,8 +55,7 @@ String ingredientData = fields[7]; // complicated ingredient stuff
 //---------------------------------------------------
 // Brendan
 boolean isTrue = true;
-for (Restaurant r : restaurants) { // Checks to see whether the
-restaurant exists in our database already. Is true if it doesn't exist
+for (Restaurant r : restaurants) { // Checks to see whether therestaurant exists in our database already. Is true if it doesn't exist
 if (!r.getName().equals(restaurantName)&&isTrue) {
 isTrue = true;
 }
@@ -72,15 +70,13 @@ newRestaurant.setCuisine(cuisine);
 newRestaurant.setRating(rating);
 restaurants.add(newRestaurant);
 }
-for (Restaurant r : restaurants) { // adds current line's menu item
-into the restaurant that is definitely now on the list
+for (Restaurant r : restaurants) { // adds current line's menu iteminto the restaurant that is definitely now on the list
 if(r.getName().equals(restaurantName)) {
 MenuItem newItem = new MenuItem(menuItemName, category,
 price, calories); // already split the data and have parameterized constructor
 String[] data = ingredientData.split(";");
 for (String a : data) {
-String[] thisIngredient = a.split("\\|"); // vertical
-bar is apparently special character so had to do special things to split it
+String[] thisIngredient = a.split("\\|"); // vertical bar is apparently special character so had to do special things to split it
 if (thisIngredient.length == 2) {
 Ingredient newIngredient = new
 Ingredient(thisIngredient[0], Boolean.parseBoolean(thisIngredient[1]));
@@ -111,11 +107,9 @@ for (Restaurant restaurant : restaurants)
 {
 System.out.println(restaurant); // print restaurants
 for (MenuItem menu : restaurant.getMenuItems()) {
-System.out.println(menu); // print their whole menu below each
-restaurant
+System.out.println(menu); // print their whole menu below eachrestaurant
 for (Ingredient ingredient : menu.getIngredients()) {
-System.out.println(ingredient); // print every ingredient in
-each item below the menu item
+System.out.println(ingredient); // print every ingredient ineach item below the menu item
 }
 }
 System.out.println();
@@ -136,9 +130,23 @@ lowestPricedMenuItem(restaurants);
 //=========================================================
 // Group Algorithms
 //=========================================================
-public static void averageMenuPrice(ArrayList<Restaurant> restaurants)
-{
-// TODO
+//Brandon, giving it a whack haha
+public static void averageMenuPrice(ArrayList<Restaurant> restaurants) {
+System.out.println("=== Average Menu Item Price Per Restaurant ===");
+
+for (Restaurant restaurant : restaurants) {
+    double total = 0;
+    int count = restaurant.getMenuItems().size();
+
+    for (MenuItem item : restaurant.getMenuItems()) {
+        total += item.getPrice();
+    }
+
+    double average = total / count;
+    System.out.printf("%s: $%.2f%n", restaurant.getName(), average);
+ }
+
+ System.out.println();
 }
 public static void highestPricedMenuItem(ArrayList<Restaurant> restaurants)
 {

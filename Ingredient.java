@@ -1,12 +1,10 @@
 /// Name: Pranav Senthil Vadivel
 // Date: 07/16/2026
 // File Name: Ingredient.java
-// Description: Creating a class called ingredients to tell java all the
-ingredients needed for each menu item in the restaurant
+// Description: Creating a class called ingredients to tell java all theingredients needed for each menu item in the restaurant
 //The Ingredient class represents the one ingredient used in a menu item
 public class Ingredient{
-// Instance Variables: Store information about the one ingredient (name,
-allergen, allergen type)
+// Instance Variables: Store information about the one ingredient (name,allergen, allergen type)
 private String name;
 private boolean allergen;
 private String allergenType;
@@ -60,8 +58,7 @@ this.allergenType = type;
 @Override
 public String toString() {
 if (allergen) {
-return "Ingredient {name " + name + ", is allergen? = " + allergen + "
-allergen type = " + allergenType + "}";
+return "Ingredient {name " + name + ", is allergen? = " + allergen + " allergen type = " + allergenType + "}";
 }
 else {
 return "Ingredient {name " + name + ", is allergen? = " + allergen +
