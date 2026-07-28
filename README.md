@@ -118,7 +118,7 @@ Examples:
 
 Created entired assigned class
 Created the intial parsing code to seperate the CSV fields, which was updated a bit by Brendan!
-
+Created the first algorithm: AverageMenuPrice!
 
 ---
 
@@ -132,35 +132,23 @@ Created the intial parsing code to seperate the CSV fields, which was updated a 
 
 ## Date
 
----
+Friday July 17th 2026
 
 ## Time
 
----
+2-4pm
 
 ## Members Present
 
-* [ ]
-* [ ]
-* [ ]
+* All memebers were present  
 
 ## What did your group accomplish?
 
----
-
----
-
----
+Prior to the meeting we all agreed to finish our individual classes, we all together made plans on how we were going to tackle the main code, because we did have issues come up during the meeting with the code no compiling properly.
 
 ## What problems did your group solve?
 
----
-
----
-
----
-
----
+We mainly were troubleshooting a couple of problems we all were having with CodeSpaces, to ensure we were all at the same starting point! Especially being able to test the code within codespaces was an indiviual problem that was botthering me but thanks to my group members I was able to hash that out!
 
 # What I Learned
 
@@ -181,37 +169,18 @@ Possible topics:
 
 Reflection
 
----
+I learned a LOT about how the classes work and especially contrcutors. I also learned how important it is to have Nested objects within the classes and how if the code isn't written properly the chain reaction it causes to the program. The pasring of the CSV file was new to me as well so that was fun to do! Although thanks to my teammates I was able to get it working better.
 
----
-
----
-
----
-
----
-
----
 
 # Challenges
 
 What was the most difficult part of this assignment?
 
----
 
----
-
----
 
 How did you overcome the challenge?
 
----
 
----
-
----
-
----
 
 # Running the Program
 
@@ -221,24 +190,22 @@ How did you overcome the challenge?
 4. Run `RestaurantReviewSystem.java`.
 5. Verify that the program reads the data correctly and all algorithms execute successfully.
 
----
+Everything works!
 
 # Submission Checklist
 
 Before submitting, verify that:
 
-* [ ] My assigned class is complete.
-* [ ] All constructors are implemented.
-* [ ] All getters and setters are implemented.
-* [ ] The program compiles without errors.
-* [ ] The program runs correctly.
+* [x] My assigned class is complete.
+* [x] All constructors are implemented.
+* [x] All getters and setters are implemented.
+* [x] The program compiles without errors.
+* [x] The program runs correctly.
 * [ ] Required algorithms are completed.
 * [ ] One challenge algorithm is completed.
 * [ ] My README has been completed.
 * [ ] My code contains comments.
 * [ ] My work has been committed and pushed to GitHub.
-
----
 
 # Academic Integrity
 
@@ -246,4 +213,4 @@ I certify that I actively participated in this group assignment, understand the 
 
 Student Signature:
 
----
+Brandon Diaz-Perez
