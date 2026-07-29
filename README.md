@@ -66,7 +66,7 @@ Bradnon Diaz-Perez
 
 Check the class you were responsible for creating.
 
-* [] Restaurant
+* [x] Restaurant
 
 # Program Requirements
 
@@ -87,13 +87,13 @@ Your completed program should:
 
 Required Algorithms
 
-* [ ] Average menu item price
-* [ ] Highest-priced menu item
-* [ ] Lowest-priced menu item
+* [x] Average menu item price
+* [x] Highest-priced menu item
+* [x] Lowest-priced menu item
 
 Challenge Algorithm (Choose One)
 
-* [ ] Average calories
+* [x] Average calories
 * [ ] Search allergen ingredients
 * [ ] Highest-rated restaurant
 * [ ] Menu item with the most ingredients
@@ -119,14 +119,7 @@ Examples:
 Created entired assigned class
 Created the intial parsing code to seperate the CSV fields, which was updated a bit by Brendan!
 Created the first algorithm: AverageMenuPrice!
-
----
-
----
-
----
-
----
+Helped troubleshpoot the code along with my partners!
 
 # Group Meeting
 
@@ -176,11 +169,11 @@ I learned a LOT about how the classes work and especially contrcutors. I also le
 
 What was the most difficult part of this assignment?
 
-
+For me personally it was either dealing with the parsing code, especially the vertical line within the CSV file data, although that was overcome mainlky by Brendan! I had issues with some of the loops that check wether a restaurant has already been added into the ArrayList, making sure it correctly identified duplicates w/o skipping or adouble-adding.
 
 How did you overcome the challenge?
 
-
+For the parsing code, altghough the amount of code was minimal I was indeed stuck on it for a while, after going back through my zybooks to refresh on string splitting and loops ,and remembering that I need to slow down and write out the code somewhere else. I had run the code in a different IDE to isolate the issues as I had issues running this program through codespaces at first. 
 
 # Running the Program
 
@@ -201,11 +194,11 @@ Before submitting, verify that:
 * [x] All getters and setters are implemented.
 * [x] The program compiles without errors.
 * [x] The program runs correctly.
-* [ ] Required algorithms are completed.
-* [ ] One challenge algorithm is completed.
-* [ ] My README has been completed.
-* [ ] My code contains comments.
-* [ ] My work has been committed and pushed to GitHub.
+* [x] Required algorithms are completed.
+* [x] One challenge algorithm is completed.
+* [x] My README has been completed.
+* [x] My code contains comments.
+* [x] My work has been committed and pushed to GitHub.
 
 # Academic Integrity
 

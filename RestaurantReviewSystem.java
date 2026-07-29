@@ -121,7 +121,7 @@ averageMenuPrice(restaurants);
 highestPricedMenuItem(restaurants);
 lowestPricedMenuItem(restaurants);
 // Choose ONE challenge algorithm
-// averageCalories(restaurants);
+averageCalories(restaurants); //We chose this one
 // searchAllergens(restaurants);
 // highestRatedRestaurant(restaurants);
 // menuItemWithMostIngredients(restaurants);
@@ -148,20 +148,86 @@ for (Restaurant restaurant : restaurants) {
 
  System.out.println();
 }
-public static void highestPricedMenuItem(ArrayList<Restaurant> restaurants)
-{
-// TODO
-}
-public static void lowestPricedMenuItem(ArrayList<Restaurant> restaurants)
-{
-// TODO
-}
+  // Pranav Senthil Vadivel
+    public static void highestPricedMenuItem(ArrayList<Restaurant> restaurants)
+    {
+
+        System.out.println("=== Highest Priced Menu Item ===");
+
+        MenuItem highestItem = null;
+        String restaurantName = "";
+
+        for(Restaurant restaurant : restaurants)
+        {
+            for (MenuItem item : restaurant.getMenuItems())
+            {
+                if (highestItem == null || item.getPrice() > highestItem.getPrice())
+                {
+                    highestItem = item;
+                    restaurantName = restaurant.getName();
+                }
+
+            }
+        }
+
+            if (highestItem != null)
+        {
+            System.out.printf("%s (%s): $%.2f%n", highestItem.getName(), restaurantName, highestItem.getPrice());
+        }
+
+        System.out.println();
+   
+
+    }
+    // Pranav Senthil Vadivel
+    public static void lowestPricedMenuItem(ArrayList<Restaurant> restaurants)
+    {
+        System.out.println("=== Lowest Priced Menu Item ===");
+
+        MenuItem lowestItem = null;
+        String restaurantName = "";
+
+        for (Restaurant restaurant : restaurants)
+        {
+            for (MenuItem item : restaurant.getMenuItems())
+            {
+                if (lowestItem == null || item.getPrice() < lowestItem.getPrice())
+                {
+                    lowestItem = item;
+                    restaurantName = restaurant.getName();
+                }
+            }
+        }
+
+        if (lowestItem != null)
+        {
+            System.out.printf("%s (%s): $%.2f%n", lowestItem.getName(), restaurantName, lowestItem.getPrice());
+        }
+
+        System.out.println();
+    }
 //---------------------------------------------------------
 // Challenge Algorithms (Choose ONE)
 //---------------------------------------------------------
-public static void averageCalories(ArrayList<Restaurant> restaurants)
-{
-}
+ //Brendan Hulse
+    public static void averageCalories(ArrayList<Restaurant> restaurants)
+    {
+        System.out.println("=== Average Menu Item Calories Per Restaurant ===");
+
+        for (Restaurant restaurant : restaurants) {
+            int total = 0;
+            int count = restaurant.getMenuItems().size();
+
+            for (MenuItem item : restaurant.getMenuItems()) {
+                total += item.getCalories();
+            }
+
+            double average = total / count;
+            System.out.printf("%s: %.0f%n", restaurant.getName(), average);
+        }
+
+        System.out.println();
+    }
 public static void searchAllergens(ArrayList<Restaurant> restaurants)
 {
 }
